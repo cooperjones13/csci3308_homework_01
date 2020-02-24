@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>About Me</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+          section, h1{
+            margin-top: 1rem;
+          }
+          main{
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+          }
+
+          .line{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+
+          .card{
+            margin-bottom: 1%;
+          }
+
+          .nav{
+            justify-content: flex-start !important; 
+          }
+
+          .nav li{
+            margin-right: 2%;
+          }
+
+          #interests .line{
+            margin-bottom: 2%;
+          }
+
+        </style>
+
+      </head>
+      <body">
+        <nav class="navbar bg-dark">
+          <ul class="nav container">
+            <li><a href="mypage_bootstrap.html"><button class="btn text-light">Home</button></a></li>
+            <li><a href="form.html"><button class="btn text-light">Form</button></a></li>
+            <li><a href="mypage.html"><button class="btn text-light">NoBootstrap</button></a></li>
+          </ul>
+        </nav>
+        <main>
+          <h1 class="container">Cooper Jones</h1>
+
+          <section  id="bio" class="card container bg-dark text-light">
+            <div id="bio-card" class="card-body">
+              <p>
+                My name is Cooper Jones and I'm a Front-End Developer with a specialty in UX Design. I'm currently studying Technology Arts and Media at the University of Colorado, an interdisciplinary program focused on combining Computer Science and Design principles. I've been programming since either 2014 or 2015, I can't quite remember but its been about 5 years. In those five years I've had experience with JavaScript, Swift, Kotlin, Java, C++, and Python.
+                I'm studying Computer Science because I really enjoy the problem solving and design aspects of front-end development. The satifaction when the code works is worth all the struggle throughout development.
+              </p>
+            </div>
+          </section>
+
+          <section id="profile" class="container">
+            <div class="line">
+              <h2>Profile</h2>
+              <a target="_blank" href="https://github.com/cooperjones13">
+                <button class="btn btn-dark">My Github</button>
+              </a>
+            </div>
+            <img class="rounded-circle" style="max-width:400px; width:90%;"alt="Profile Picture" src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/31913617_1802955983076950_1789883038847467520_n.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=59IWIGeavqMAX8eJgVh&_nc_ht=scontent.fapa1-2.fna&oh=a2d3c1382b47575b3bcb23b6bd34474a&oe=5EB8EC3F">
+            <div id="projects" class="container">
+              <h3>My Projects</h3>
+              <table class="table container">
+                <tr>
+                  <th>Project Name</th>
+                  <th>Tech Used</th>
+                </tr>
+                <tr>
+                  <td>womentor</td>
+                  <td>JavaScript, React, Node</td>
+                </tr>
+                <tr>
+                  <td>pastime</td>
+                  <td>Javascript, React, Node, Express,  Arduino, Sass</td>
+                </tr>
+                <tr>
+                  <td>Eta Gamma Chapter Website</td>
+                  <td>JavaScript, React, Node, Sass</td>
+                </tr>
+              </table>
+            </div>
+            <div id="interests" class="container">
+              <div class="line">
+                <h3>My Interests</h3>
+                <a href="form.html"><button class="btn btn-dark">Add Interest</button></a>
+              </div>
+              <ul style="display:flex; justify-content:space-around; flex-wrap: wrap;">
+                <div class="card" style="width:300px">
+                  <img class="card-img-top" src="https://coresites-cdn-adm.imgix.net/mpora_new/wp-content/uploads/2015/11/Red-Bull-Fourth-Phase-Art-of-Flight-Seque.jpg?fit=crop" alt="snowboarding">
+                  <div class="card-body">
+                    <h4 class="card-title">Snowboarding</h4>
+                    <p class="card-text">gnar, pow, and ski days with the bois... need I say more?</p>
+                  </div>
+                </div>
+                <div class="card" style="width:300px">
+                  <img class="card-img-top" src="https://media.giphy.com/media/3oriNPdeu2W1aelciY/giphy.gif" alt="rolling 20 sided die">
+                  <div class="card-body">
+                    <h4 class="card-title">Board Games and Tabletop RPGs</h4>
+                    <p class="card-text">there's nothing better than a night playing Catan or DnD with the bois</p>
+                  </div>
+                </div>
+                <div class="card" style="width:300px">
+                  <img class="card-img-top" src="https://media.giphy.com/media/l4FGoi8sn5cK7hEIg/giphy.gif" alt="dancing feet">
+                  <div class="card-body">
+                    <h4 class="card-title">Listening to Music</h4>
+                    <p class="card-text">I like all kinds of music. Indie Pop, Alternative Hip-Hop, and EDM are some of my favorite genres</p>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </body>
+    </html>
